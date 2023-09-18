@@ -68,8 +68,8 @@ function halfNumber(num) {
 }
 
 function percentOf(num1, num2) {
-    var percent = (num1 / num2) * 100;
-    document.getElementById("solution").innerHTML = num1 + ' is ' + percent + '% of ' + num2;
+    var percentOf = (num1 / 100) * num2;
+    document.getElementById("solution").innerHTML = percentOf + ' is ' + num1 + '% of ' + num2;
 }
 
 function findModulus(num) {
@@ -112,8 +112,6 @@ areaButton.addEventListener("click", function() {
     var radius = document.getElementById("area-input").value;
     calculateAreaOfCircle(radius);
 });
-
-
 
 </script>
 </body>
